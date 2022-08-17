@@ -1,0 +1,262 @@
+html, body {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+ }
+
+ body { 
+    margin: 0%;
+    background:#f0f1ff;
+    color: #001233;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+ }
+
+ #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+ }
+ .img-background-star {
+    display:block;
+    margin: 0px auto;                 
+    background-image: url("van/img-header.png");
+    height: 250px;
+    width: 100%;
+    opacity: 0.8;
+ 
+ }
+
+ .titulo {
+    color: #f0f1ff;
+    font-size: 60px
+    
+ }
+
+ .subtitulo {
+   color:#f0f1ff;
+   font-size: 30px
+
+ }
+
+ #navegation-bar  li  {
+    display: inline-block;
+ }
+
+ #navegation-bar  li a {
+    display: block;
+    color: #f0f1ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+
+ #navegation-bar li a:hover:not(.active) {
+    background-color: #416996;
+ }
+
+ #navegation-bar li a.active {
+
+    background-color: #416996;
+ }
+
+ #navegation-bar  ul {
+    margin: 10px 0px;
+    padding: 0px;
+    border: 1px solid #e7e7e7;
+    background-color: #5488c5;
+
+ }
+
+ #navegation-bar .menuHamburgerIcon {
+    display: none;
+ }
+
+ @media  screen and (max-width: 650px) {
+    #mavegation-bar .menuHamburgerIcon{
+        display: block;
+        float: right;
+    }
+
+    #navegation-bar li:not(:first-child):not(.menuHamburgerIcon) {
+        display: none;
+    }
+
+    #navegation-bar .menuHamburgerIcon {
+        display: block;
+        float: right;
+    }
+
+    #navegation-bar.responsive {
+      position: relative;
+    }
+
+    #navegation-bar.responsive .menuHamburgerIcon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    #navegatio-bar.responsive .menuHamburgerIcon a {
+      color: cadetblue;
+    }
+
+    #navegation-bar.responsive li {
+      float: none;
+      display: block !important;
+    }
+
+    #navegatio-bar.responsive li a {
+      text-align: left;
+    }
+ }
+
+
+ #main-content-container {
+    display:flex;
+ }
+
+ #links-sidebar {
+    flex: 2; 
+    background: #3c618b8f; 
+    padding: 20px;
+    opacity: 0.9;   
+ }
+
+ #links-sidebar div {
+   padding: 0 0 0 10px;
+ }
+
+ .imgLinks {
+    width: 217px;
+    height: 150px;  
+}
+
+@media  screen and (max-width: 650px) {
+   #links-sidebar {
+      display:none;
+   }
+
+   #main-content{
+      flex: 6;
+      padding: 10px 20% 10px 10px;
+      padding-right: 10px;
+   }
+}
+ #main-content { 
+    flex: 8;           
+   padding: 1px 20% 25px 25px;
+   text-align: justify;
+ }
+
+ .main-content_autoretrato {
+  width:30%;
+ margin: 0px 17px 10px 10px;
+ float: left;
+ 
+ }
+
+
+ #footer {
+    margin: auto;
+    background: #1b366e;
+    display:flex;
+    justify-content: space-between;
+    width: 98%;
+    color:#f0f1ff;
+    padding:1%;
+ }
+
+
+/* .footer__section {
+ display: flex;
+ flex-direction: column ;
+ align-items: center;
+ font-size:20px;
+  height:64px;
+ width: 30%;
+  margin-top:16px;
+ } */
+
+footer > p, em, strong{
+color:#f0f1ff;
+}
+ .redes {
+    width:23%;
+    padding: 1%;
+ }
+ .contactForm {
+    width:48%;
+    padding:1%;
+ }
+ .moreSites {
+    width:23%;
+    padding: 1%;
+ }
+ .social__networks {
+        display:flex;
+        flex-direction: column;
+        gap: 20px
+
+ }
+
+ .social__network {
+        display: flex;
+        align-items: center;
+ }
+
+ .social__icon {
+        font-size: 32px;
+ }
+
+ .social__icon-handler {
+        margin-left: 10px;
+ }
+
+ a{
+        text-decoration: none;
+        color: #f0f1ff;
+ }
+
+ a:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+ }
+
+ input[type=email], textarea {
+        width:100%;
+        padding: 12px 20px;
+        margin: 8px 0px;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        transition: 0.5s;
+        outline: none
+}
+
+input[type=email]:focus, textarea:focus {
+        border:3px solid #555
+}
+
+input[type=submit] { 
+        background: #f0f1ff;
+        border: none; 
+        padding: 16px 32px; 
+        text-decoration: none;
+        margin: 4px 2px; 
+        cursor: pointer;
+        color: #1b366e;
+}
+
+.moreSites ul li {
+   padding: 0 0 10px;
+   list-style: none;
+}
+
+@media  screen and (max-width: 650px) {
+   #footer{
+      flex-direction: column;
+      align-items: center;
+   }
+
+}
